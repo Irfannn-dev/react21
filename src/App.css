@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #090A0E;
+    color: #ffffff;
+}
+
+.center-max-size {
+    max-width: 1020px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-style: italic;
+    color: green;
+    text-align: center;
+}
+
+.poster {
+    background-size: cover;
+    background-position: top center;
+    min-height: 600px;
+    display: flex; 
+    align-items: flex-end;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.poster-content {
+    width: 80%;
+    mix-blend-mode: difference;
+}
+
+h1 {
+    font-size: 60px;
+    margin-top: 0;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.container {
+    background-color: #0F1014;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+
+.button {
+    margin: 20px 0;
+    background: #0F1014;
+    color: white;
+    border: 1;
+    outline: 1;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+    text-transform: uppercase; 
+    letter-spacing: 2px;
+    border: 1px solid gray;
+}
+
+.button:hover {
+    box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+}
+
+.close-video {
+    position: absolute;
+    z-index: 2;
+    bottom: 10px;
+    left: 10px;
+}
+
+.youtube-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.brand {
+    font-weight: bold;
+}
+
+/*-- MOVIE */
+
+.movie {
+    position: relative;
+    cursor: pointer;
+    text-align: left;
+    font-size: 16px;
+}
+
+.movie img {
+    height: 300px;
+    max-width: 100%;
+    width: 425px;
+}
+
+.movie-infos {
+    padding: 15px 0;
+}
+
+.movie-title {
+    margin: 0;
+    font-size: 100%;
+}
+
+.movie-voting {
+    position: absolute;
+    top: 5px;
+    background-color: #0F1014;
+    border: 1px solid gray;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 25px;
+    margin: 10px;
+    color: white;
+}
+#light {
+  background-color: white;
+}
+
+#dark {
+  background-color: black;
+}
+/** SEARCH **/
+.form {
+    position: relative;
+}
+
+.search {
+    border: 5px solid darkslategray;
+    padding: 5px 10px;
+    border-radius: 15px;
+    color: black;
+    text-align: left;
+    margin-left: 40px;
+    margin-top: 5px;
+}
+
+.submit-search {
+    position: absolute;
+    right: 100px;
+    top: 1px;
+    color:  black;
+    border: none;
+    cursor: pointer;
+    
+}
+
+/* Media Query Responsive */
+
+/* Laptop */
+@media (max-width: 1366px){
+  {
+    font-size: 50%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px){
+  {
+    font-size: 45%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 450px){
+  movie{
+    font-size: 35%;
+  }
+}
