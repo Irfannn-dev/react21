@@ -1,0 +1,242 @@
+/* mov.css */
+.App {
+  background-image: url("assets/footer-bg.jpg");
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.header {
+  background-image: url("assets/footer-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 16px;
+  text-align: start;
+  justify-content: center;
+  font-size: 30px;
+  font-style: italic;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.search-form {
+  display: flex;
+  justify-content: end;
+  align-items: end ;
+}
+
+.search-form input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-form button {
+  margin-left: 8px;
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.poster {
+  margin: 10px;
+  padding: 10px;
+  width: 400px;
+  background-color: #f4f4f4;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.poster:hover {
+  transform: scale(1.05);
+}
+
+.poster img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px 5px 0 0;
+}
+
+.detail {
+  padding: 10px;
+}
+
+/* Ukuran font di tampilan desktop */
+.movie-title {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 1px;
+  height: 40px;
+  overflow: hidden;
+  color: #000;
+}
+
+/* Ukuran font di tampilan mobile */
+
+@media (max-width: 767px) {
+  .movie-title {
+    font-size: 15px;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    font-size: 14px;
+    text-align: center;
+  }
+  .search-form{
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+
+/* Laptop view: 4 posters side by side */
+@media (min-width: 768px) {
+  .poster {
+    width: calc(25% - 20px);
+  }
+}
+
+
+/* Mobile view: 3 posters side by side */
+@media (max-width: 767px) {
+  .poster {
+    width: calc(40.33% - 20px);
+  }
+}
+
+.backdrop-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+}
+
+.backdrop {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  height: 600px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column; /* Tambahkan flex-direction untuk menjadikan overview di bawah backdrop */
+  justify-content: flex-end; /* Posisikan overview di bagian bawah */
+  color: #fff;
+  padding: 20px; /* Beri padding agar overview terlihat lebih baik */
+}
+
+.backdrop-details {
+  text-align: center;
+  padding: 20px;
+}
+
+.backdrop h2 {
+  margin-bottom: 10px;
+}
+
+.backdrop p {
+  margin-bottom: 20px;
+  mix-blend-mode: difference;
+}
+
+.backdrop button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.not-found-notification {
+  color: #f00;
+  margin-top: 10px;
+}
+
+.missing-poster-notification {
+  display: flex;
+  align-items: center;
+  color: #f00;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.notification-icon {
+  margin-right: 5px;
+}
+
+/* CSS untuk video YouTube */
+/* CSS untuk video YouTube */
+.youtube-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* Untuk menyesuaikan rasio aspek video YouTube (16:9) */
+}
+
+.youtube-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+}
+
+/* Gaya untuk tombol tutup */
+.youtube-close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #fff;
+  border: none;
+  color: #333;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Media query untuk layar laptop atau perangkat dengan lebar lebih besar */
+@media (min-width: 768px) {
+  .youtube-video {
+    height: 70%;
+  }
+}
+
+
+/* ... code lainnya ... */
+
