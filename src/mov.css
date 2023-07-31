@@ -251,6 +251,8 @@ ul {
   font-weight: bold;
   color: white;
   position: absolute;
+  top: 12px;
+  left: 170px;
   border-radius: 50%;
   background-color: black;
   padding: 8px;
@@ -262,19 +264,6 @@ ul {
 }
 
 /* Gaya untuk tampilan mobile (lebar layar <= 768px) */
-/* Gaya untuk tampilan laptop */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .vote-average {
-    font-size: 16px;
-    padding: 7px;
-    width: 30px;
-    height: 30px;
-    top: 15px;
-    left: 175px;
-    justify-content: center;
-    align-items: center;
-  }
-}
 
 /* Gaya untuk tampilan tablet */
 @media (min-width: 481px) and (max-width: 768px) {
