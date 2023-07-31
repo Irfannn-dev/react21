@@ -251,8 +251,6 @@ ul {
   font-weight: bold;
   color: white;
   position: absolute;
-  top: 12px;
-  left: 170px;
   border-radius: 50%;
   background-color: black;
   padding: 8px;
@@ -272,7 +270,7 @@ ul {
     width: 30px;
     height: 30px;
     top: 15px;
-    left: 175px;
+    left: 150px;
   }
 }
 
