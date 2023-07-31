@@ -105,6 +105,7 @@ function App() {
           {movies.map((movie) => (
             <li className="poster" key={movie.id} onClick={() => handleMovieClick(movie)}>
               <img src={`https://image.tmdb.org/t/p/w200/${movie.poster_path}`} alt="" className="poster-path" />
+                <div className="vote-average">{movie.vote_average}</div>
               <div className="detail">
                 <h2 className="movie-title">{movie.title}</h2>
               </div>
