@@ -265,6 +265,18 @@ ul {
 
 /* Gaya untuk tampilan mobile (lebar layar <= 768px) */
 
+/* Gaya untuk tampilan laptop */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .vote-average {
+    font-size: 16px;
+    padding: 7px;
+    width: 30px;
+    height: 30px;
+    top: 15px;
+    left: 150px;
+  }
+}
+
 /* Gaya untuk tampilan tablet */
 @media (min-width: 481px) and (max-width: 768px) {
   .vote-average {
