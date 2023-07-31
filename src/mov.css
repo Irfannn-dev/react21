@@ -276,6 +276,17 @@ ul {
   }
 }
 
+@media (max-width: 1280px) {
+  .vote-average {
+    font-size: 14px; /* Ukuran lebih kecil untuk tampilan mobile */
+    padding: 6px; /* Padding lebih kecil untuk tampilan mobile */
+    width: 15px; /* Ukuran lebih kecil untuk tampilan mobile */
+    height: 15px; /* Ukuran lebih kecil untuk tampilan mobile */
+    top: 12px;
+    left: 1200px;
+  }
+}
+
 
 /* ... code lainnya ... */
 
