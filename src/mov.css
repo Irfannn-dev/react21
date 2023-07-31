@@ -173,6 +173,7 @@ ul {
 
 .backdrop p {
   margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .backdrop button {
