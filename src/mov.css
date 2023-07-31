@@ -237,6 +237,45 @@ ul {
   }
 }
 
+.poster {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Gaya untuk tampilan desktop (lebar layar > 768px) */
+.vote-average {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  top: 12px;
+  left: 170px;
+  border-radius: 50%;
+  background-color: black;
+  padding: 8px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Gaya untuk tampilan mobile (lebar layar <= 768px) */
+@media (max-width: 768px) {
+  .vote-average {
+    font-size: 14px; /* Ukuran lebih kecil untuk tampilan mobile */
+    padding: 6px; /* Padding lebih kecil untuk tampilan mobile */
+    width: 15px; /* Ukuran lebih kecil untuk tampilan mobile */
+    height: 15px; /* Ukuran lebih kecil untuk tampilan mobile */
+    top: 12px;
+    left: 103px;
+  }
+}
+
 
 /* ... code lainnya ... */
 
