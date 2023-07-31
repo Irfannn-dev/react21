@@ -246,7 +246,6 @@ ul {
   transition: transform 0.2s ease-in-out;
 }
 
-/* Gaya untuk tampilan desktop (lebar layar > 768px) */
 .vote-average {
   font-size: 18px;
   font-weight: bold;
@@ -265,17 +264,38 @@ ul {
 }
 
 /* Gaya untuk tampilan mobile (lebar layar <= 768px) */
-@media (max-width: 768px) {
+/* Gaya untuk tampilan laptop */
+@media (min-width: 769px) and (max-width: 1024px) {
   .vote-average {
-    font-size: 14px; /* Ukuran lebih kecil untuk tampilan mobile */
-    padding: 6px; /* Padding lebih kecil untuk tampilan mobile */
-    width: 15px; /* Ukuran lebih kecil untuk tampilan mobile */
-    height: 15px; /* Ukuran lebih kecil untuk tampilan mobile */
-    top: 12px;
-    left: 103px;
+    font-size: 16px;
+    padding: 7px;
+    width: 30px;
+    height: 30px;
+    top: 15px;
+    left: 175px;
   }
 }
 
+/* Gaya untuk tampilan tablet */
+@media (min-width: 481px) and (max-width: 768px) {
+  .vote-average {
+    font-size: 14px;
+    padding: 6px;
+    width: 28px;
+    height: 28px;
+    top: 12px;
+    left: 130px;
+  }
+}
 
-/* ... code lainnya ... */
-
+/* Gaya untuk tampilan handphone */
+@media (max-width: 480px) {
+  .vote-average {
+    font-size: 10px;
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    top: 12px;
+    left: 97px;
+  }
+}
