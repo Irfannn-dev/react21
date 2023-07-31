@@ -271,6 +271,8 @@ ul {
     height: 30px;
     top: 15px;
     left: 175px;
+    justify-content: center;
+    align-items: center;
   }
 }
 
